@@ -4,8 +4,10 @@ def rec_product(a, b):
      #code goes here
     if b == 0:
         return 0
+    # Code for when b is negative
     elif b < 0:
         return -a + rec_product(a,b+1)
+    # Code for when b is positive
     elif b > 0:
         return a + rec_product(a, b-1)
 
