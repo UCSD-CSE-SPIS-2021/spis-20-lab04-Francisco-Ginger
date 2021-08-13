@@ -5,6 +5,7 @@
 #a and b
 def recproduct(a, b):
     #code goes here
+    #basecase:
     if b == 0:
         return 0
     elif b > 0:
