@@ -16,8 +16,9 @@ def tree(trunk_length, height):
         ginger.forward(trunk_length)
         ginger.backward(trunk_length)
     else:
+        ginger.fill("brown")
         ginger.forward(trunk_length)
-       
+        ginger.fill("green")
         ginger.right(45)
 
         tree(trunk_length/1.5, height - 1)
