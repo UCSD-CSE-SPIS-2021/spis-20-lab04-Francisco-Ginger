@@ -1,12 +1,14 @@
-
+#draw a christmas tree
 import turtle
 
 #right turtle
 ginger = turtle.Turtle()
 ginger.penup()
-ginger.speed(1)
+ginger.speed(5)
 #left branches
-
+francisco = turtle.Turtle()
+francisco.penup()
+francisco.speed(5)
 ginger.setpos(0,-200)
 ginger.left(90)
 def tree(trunk_length, height):
@@ -19,19 +21,8 @@ def tree(trunk_length, height):
         ginger.forward(trunk_length)
        
         ginger.right(45)
-
-        tree(trunk_length/1.5, height - 1)
-
-        ginger.left(90)
-
-        tree(trunk_length/1.5, height - 1)
-
-        ginger.right(45)
-
         ginger.backward(trunk_length)
+        ginger.left(45)
+        return tree(trunk_length * 0.5, height-1)
 
-tree(100, 4)
-
-#fun ideas:
-#while drawing trunk make pen brown
-#while drawing branches make it green
+tree(200, 4)
